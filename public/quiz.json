@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Which of the following unit is used to measure nuclear diameter?",
+        "options": ["Picometer", "Fermi", "Micron", "Millimeter"],
+        "answer": "Fermi"
+    },
+    {
+        "question": "Rad/sec is the unit of ______.",
+        "options": ["Angular displacement", "Angular velocity", "Angular acceleration", "Angular momentum"],
+        "answer": "Angular velocity"
+    },
+    {
+        "question": "Which one is a vector quantity?",
+        "options": ["Time", "Temperature", "Flux Density", "Magnetic Field Intensity"],
+        "answer": "Magnetic Field Intensity"
+    },
+    {
+        "question": "Which of the following is not a unit of time?",
+        "options": ["Second", "Week", "Year", "Light Year"],
+        "answer": "Light Year"
+    },
+    {
+        "question": "Which of the following ratios express pressure?",
+        "options": ["Force/Area", "Energy/Volume", "Energy/Area", "Force/Volume"],
+        "answer": "Force/Area"
+    },
+    {
+        "question": "Which of the following is a possible dimensionless quantity?",
+        "options": ["Velocity gradient", "Pressure gradient", "Displacement gradient", "Force gradient"],
+        "answer": "Displacement gradient"
+    },
+    {
+        "question": "The dimensions of universal gravitational constant are",
+        "options": ["[ M⁻² L² T⁻² ]", "[ M⁻¹ L³ T⁻² ]", "[ M¹ L⁻¹ T⁻² ]", "[ M¹ L² T⁻² ]"],
+        "answer": "[ M⁻¹ L³ T⁻² ]"
+    },
+    {
+        "question": "Dyne is a unit of",
+        "options": ["Work", "Force", "Current", "Temperature"],
+        "answer": "Force"
+    },
+    {
+        "question": "Which of the following is unit of length?",
+        "options": ["Lunar Month", "Kelvin", "Candela", "Light year"],
+        "answer": "Light year"
+    },
+    {
+        "question": "Which of the following has no units?",
+        "options": ["Electric field", "Magnetic susceptibility", "Refractive index", "Moment of a magnet"],
+        "answer": "Refractive index"
+    }
+]

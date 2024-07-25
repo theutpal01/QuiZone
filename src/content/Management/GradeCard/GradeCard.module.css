@@ -1,0 +1,57 @@
+.singleChart {
+	width: 100%;
+	justify-content: space-around;
+}
+
+.circularChart {
+	display: block;
+	margin: 10px auto;
+	max-width: 80%;
+	max-height: 250px;
+}
+
+.circleBg {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 3.8;
+}
+
+.circle {
+	fill: none;
+	stroke-width: 2.8;
+	stroke-linecap: round;
+	animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+	0% {
+		stroke-dasharray: 0 100;
+	}
+}
+
+.circularChart.red .circle {
+	stroke: #e2552a;
+}
+
+.circularChart.orange .circle {
+	stroke: #ff9f00;
+}
+
+.circularChart.yellow .circle {
+	stroke: #e0de3c;
+}
+
+.circularChart.blue .circle {
+	stroke: #3c9ee5;
+}
+
+.circularChart.green .circle {
+	stroke: #4CC790;
+}
+
+.percentage {
+	fill: #666;
+	font-family: sans-serif;
+	font-size: 0.6em;
+	text-anchor: middle;
+}
