@@ -10,19 +10,18 @@ def is_valid_id(_id):
 
 # Avatar selection
 def getAvatar():
+    import os
     from random import choice
-    
-    avatars = [
-        "https://drive.google.com/uc?export=view&id=1dFzU3jDAVEgGNd41zgc5R_ftMLfp3smY",
-        "https://drive.google.com/uc?export=view&id=1sTkgFweaqhUt6qODJ0wa_EFLtwSbxmQs",
-        "https://drive.google.com/uc?export=view&id=1kn0yVMS_X-CqoQj2qmEKhPTlC88A6ZJR",
-        "https://drive.google.com/uc?export=view&id=191lKllgQs7QusrAPelNfMfrrhSq6Ut9T",
-        "https://drive.google.com/uc?export=view&id=13As9jPdanbvHCkqEJK1mbvm6qjnerAv9",
-        "https://drive.google.com/uc?export=view&id=13Qf-PcIK3EUkJL_bILTzv1qKUkeZ37A_",
-        "https://drive.google.com/uc?export=view&id=13BbDKeaO-_8tDjP7PKsOjU-pztMXt3iz",
-        "https://drive.google.com/uc?export=view&id=13ZcbksoigNrWlKZ-vG-ZV81dhXZB5RM-",
-    ]
-    return choice(avatars)
+
+    cloud = os.getenv("CLOUDINARY_CLOUD_NAME")
+    ids_raw = os.getenv("AVATAR_PUBLIC_IDS", "")
+
+    if not cloud or not ids_raw:
+        return "https://api.dicebear.com/6.x/identicon/svg?seed=user"
+
+    public_ids = [pid.strip() for pid in ids_raw.split(",") if pid.strip()]
+    pid = choice(public_ids)
+    return f"https://res.cloudinary.com/{cloud}/image/upload/{pid}"
 
 
 # UUID Generation

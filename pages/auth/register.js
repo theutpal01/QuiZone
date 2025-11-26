@@ -126,7 +126,7 @@ function Register({ name, classes, router, alertStatus }) {
 												<TextField sx={{ textAlign: 'left' }} select onChange={handleChange} name="class" value={form.class || ""} label={"Class"}>
 													<MenuItem key="" value="">None</MenuItem>
 													{classes.map((classNumber => (
-														<MenuItem key={classNumber} value={classNumber}>{`Class ${classNumber}`}</MenuItem>
+														<MenuItem key={classNumber} value={classNumber}>{`${classNumber !== "College" ? "Class" : ""} ${classNumber}`}</MenuItem>
 													)))}
 												</TextField>
 											}

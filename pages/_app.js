@@ -44,9 +44,10 @@ function App(props) {
         economics: "Economics",
         accountancy: "Accountancy",
         bst: "Business Studies",
-        politics: "Political Science"
+        politics: "Political Science",
+		aptitude: "Quantitative Skills/Aptitude",
     };
-	const classes = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
+	const classes = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "College"];
 
 	const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 	const getLayout = Component.getLayout ?? ((page) => page);
